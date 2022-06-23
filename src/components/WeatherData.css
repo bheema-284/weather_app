@@ -1,0 +1,115 @@
+*{margin: 0;padding: 0;font-family: 'Red Hat Display'}
+
+body{background-color: rgb(140, 136, 136);}
+
+.app{
+  min-width: 800px;
+  height:100vh;
+  min-height: 100vh;
+  margin: auto;
+  background-image: url('./assets/welcome.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+  position: relative;
+}
+main{
+  height: 100%;
+  background: rgb(140, 136, 136);
+}
+
+.app-name{margin: 50px 0 30px 0;font-size: 30px;font-weight: 400;}
+.comps{font-size: 16px;font-weight: 400;}
+
+.welcome-text{
+  text-align: center;
+  max-width: 80%;
+  margin: 16vh auto 0 auto;
+}
+.welcome-text h1{font-size: 50px ;text-transform: uppercase;font-weight: 400;}
+.welcome-text p{font-size: 14px;}
+
+.search-bar{
+  max-width: 86%;
+  margin: auto;
+  transform: translateY(50%);
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(235, 246, 255);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-btn{
+  display: block;
+  border: 0;
+  outline: 0;
+  padding: 4px 22px;
+  background-color: rgb(182, 182, 182);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.search-btn:active{background-color: rgb(68, 68, 68);}
+.search-btn img{width: 30px; height: 30px;}
+.search-box{
+  display: block;
+  padding: 16px;
+  font-size: 18px;
+  width: 80%;
+  outline: 0;
+  border: 0;
+  background-color: rgb(235, 246, 255);
+}
+
+.app.warm{background-image: url('./assets/warm.jpg');}
+.app.cold{background-image: url('./assets/cold.jpg');}
+.app.medium{background-image: url('./assets/medium.jpg');}
+.app.lcold{background-image: url('./assets/lesscold.jpg');}
+
+
+.location-box, .welcome-box{
+  max-width: 86%;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  border-radius: 6px;
+  transform: translateY(10%);
+}
+
+.location{margin-bottom: 20px;font-size: 36px;font-weight: 400;}
+.date{font-size: 24px;font-weight: 400;}
+.temp{
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: 50px;
+  border-radius: 6px;
+}
+.type{
+  width: 100px;
+  font-size: 18px;
+  padding: 4px 16px;
+  border-radius: 40px;
+  font-weight: 300;
+  border: white 1px solid;
+  text-align: center;
+}
+
+.other-dets{
+  margin: 100px auto 0 auto;
+  padding: 20px;
+  border: white 1px solid;
+  border-radius: 6px;
+  text-align: left;
+}
+.others{margin-top: 18px;font-weight: lighter;}
+
+
+
+@media(max-width: 800px){
+  .app{background-size: cover;}
+}
