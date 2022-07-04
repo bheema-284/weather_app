@@ -4,7 +4,7 @@ import Header from './components/Header';
 import WeatherAndForecast from './components/WeatherAndForecast';
 import Loader from './components/Loader';
 import Warning from './components/Warning';
-
+import {Map} from './components/Map';
 import getAddressOfCoordinates from './api/reverseGeocoding';
 import getCoordinatesOfAddress from './api/forwardGeocoding';
 import getWeatherAndForecast from './api/weatherAndForecast';
@@ -118,7 +118,11 @@ function App() {
           <Header searchCity={searchCity} />
           {Main[contentState]()}
         </>
+        <div className="App__container" style={{width:"375"}}>
+        <Map/>
       </div>
+      </div>
+     
     </div>
   );
 }
