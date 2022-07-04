@@ -40,3 +40,8 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+.App__container2{
+  margin-top: 20px;
+  border-radius: 10px;
+}

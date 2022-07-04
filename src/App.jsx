@@ -118,7 +118,7 @@ function App() {
           <Header searchCity={searchCity} />
           {Main[contentState]()}
         </>
-        <div className="App__container" style={{width:"375"}}>
+        <div className="App__container2" >
         <Map/>
       </div>
       </div>
