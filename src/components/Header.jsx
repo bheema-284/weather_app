@@ -6,10 +6,8 @@ import "../styles/Header.css";
 export default function Header({ searchCity }) {
     return ( <
         header className = "Header" >
-        <
-        h1 className = "Header__title" > Weather < /h1> <
+        <h1 className = "Header__title" > Weather App</h1> <
         Search searchCity = { searchCity }
-        /> < /
-        header >
+        /> </ header >
     );
 }
