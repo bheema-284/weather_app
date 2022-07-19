@@ -1,47 +1,112 @@
 .App {
+  width: 40%;
+  border: 2px solid rgba(232, 249, 40, 0.525);
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 2;
+  margin: auto;  
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.search_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  
+}
+
+.search_div>div:first-child {
+  display: flex;
+}
+
+.search_div input {
+  border: transparent;
+  outline: transparent;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;  
+}
+
+.days {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  margin: 10px auto;
+  overflow-x: scroll;
+  border: 1.5px solid cyan;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.day {
+  width: 100px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.day img {
+  width: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-button {
-  font-size: calc(10px + 2vmin);
-}
-
-.App__container2{
-  margin-top: 20px;
+.temp_var{
+  margin-top: 10px;
+  border: 1px solid gray;
   border-radius: 10px;
+  padding: 10px;  
+}
+.search_model{
+  position: absolute;
+  top: 79px;
+  width: calc(40% - 22px);
+  padding: 10px;
+  overflow: scroll;
+  border: 2px solid rgb(124, 173, 247);
+  background-color: white;
+  border-radius: 5px;
+  z-index: 20;
+ height:320px;
+ margin-top: 50px;
+ overflow: scroll;
+}
+@media only screen and (max-Width:1200px) {
+  .App {
+      width: 60%;
+      margin: auto;
+  }
+  .search_model{
+      width: calc(60% - 15px);
+  }
+}
+
+@media only screen and (max-Width:850px) {
+  .App {
+      width: 80%;
+      margin: auto;
+  }
+  .search_model{
+      width: calc(80% - 20px);
+  }
+}
+
+@media only screen and (max-Width:600px) {
+  .App {
+      width: calc(100% - 40px);
+      border: transparent;
+      border-radius: 0;
+  }
+  .search_model{
+      width: calc(90% - 10px);
+  }
+  .main {
+      height: fit-content;
+      
+    }
 }
