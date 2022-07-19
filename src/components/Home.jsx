@@ -77,10 +77,7 @@ export const Home = () => {
   const { all_city_data } = useSelector((store) => store.debouncing);
 
   return (
-    <>
-    <div className="divh1">
-      <h1 className="h1">Weather Appication</h1>
-      </div>    
+    <>       
     <div className="App">
       <div
         className="search_div"
