@@ -1,3 +1,60 @@
+body{
+  background-color: skyblue;
+}
+.h1{
+  text-align: center;  
+}
+#loading{
+  height: 100vh;
+  position: fixed;
+  display: block;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+  z-index: 99;
+}
+#left{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: rgb(11, 150, 248);
+}
+#right{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: -25px 125px ;
+  background-color: rgb(11, 149, 248);
+}
+@keyframes spinner {
+  0%{
+      transform: rotate(0deg);
+  }
+  25%{
+      transform: rotate(270deg);
+      
+  }
+  75%{
+      transform: rotate(540deg);
+  }
+  100%{
+      transform: rotate(720deg);
+  }
+}
+.divh1{
+  width: 43%;
+  margin: auto;  
+  background-color: greenyellow;
+  border-radius: 5px;  
+}
+.humidity{
+  color: rgb(215, 75, 82);
+}
+.pressure{
+  color: rgb(234, 23, 139);
+}
 .App {
   width: 40%;
   border: 2px solid rgba(232, 249, 40, 0.525);
@@ -58,9 +115,10 @@
 }
 .temp_var{
   margin-top: 10px;
-  border: 1px solid gray;
+  border: 1.5px solid gray;
   border-radius: 10px;
-  padding: 10px;  
+  padding: 10px; 
+  
 }
 .search_model{
   position: absolute;

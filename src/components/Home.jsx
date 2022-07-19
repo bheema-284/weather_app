@@ -77,6 +77,10 @@ export const Home = () => {
   const { all_city_data } = useSelector((store) => store.debouncing);
 
   return (
+    <>
+    <div className="divh1">
+      <h1 className="h1">Weather Appication</h1>
+      </div>    
     <div className="App">
       <div
         className="search_div"
@@ -213,7 +217,7 @@ export const Home = () => {
               <div
                 style={{
                   width: "50%",
-                  backgroundColor: "#0887e129",
+                  backgroundColor: "#d64bf929",
                   borderRadius: "5px",
                   padding: "10px",
                   margin: "5px",
@@ -224,12 +228,12 @@ export const Home = () => {
                 <div style={{ fontWeight: "700", lineHeight: "18.4px" }}>
                   Pressure
                 </div>
-                <div>{weather_onecall.daily[index].pressure} hpa</div>
+                <div className="pressure">{weather_onecall.daily[index].pressure} hpa</div>
               </div>
               <div
                 style={{
                   width: "50%",
-                  backgroundColor: "#0887e129",
+                  backgroundColor: "#d64bf929",
                   borderRadius: "5px",
                   padding: "10px",
                   margin: "5px",
@@ -238,7 +242,7 @@ export const Home = () => {
                 }}
               >
                 <div style={{ fontWeight: "700" }}>Humidity</div>
-                <div>{weather_onecall.daily[index].humidity}%</div>
+                <div className="humidity">{weather_onecall.daily[index].humidity}%</div>
               </div>
             </div>
             <div
@@ -251,7 +255,7 @@ export const Home = () => {
               }}
             >
               <div>
-                <div style={{ fontWeight: "700" }}>Sunrise</div>
+                <div style={{color:'blue', fontWeight: "700" }}>Sunrise</div>
                 <div>
                   {new Date(
                     +weather_onecall.daily[index].sunrise * 1000
@@ -262,7 +266,7 @@ export const Home = () => {
                 </div>
               </div>
               <div>
-                <div style={{ fontWeight: "700" }}>Sunset</div>
+                <div style={{ color:'blue', fontWeight: "700" }}>Sunset</div>
                 <div>
                   {new Date(
                     +weather_onecall.daily[index].sunset * 1000
@@ -365,6 +369,6 @@ export const Home = () => {
         <Map />
       </div>
     </div>
-    
+    </>
   );
 };

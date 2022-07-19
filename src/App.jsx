@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="main">
       {isLoding ? (
-        <div id="loading">
-          <div id="main">
-            <div id="left"></div>
-            <div id="right"></div>
+        <div className="loading">
+          <div className="main">
+            <div className="left"></div>
+            <div className="right"></div>
           </div>
         </div>
       ) : (
