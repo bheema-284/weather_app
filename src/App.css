@@ -134,6 +134,16 @@ body{
  margin-top: 50px;
  overflow: scroll;
 }
+
+.gmap_iframe{
+  width: calc(100% - 5px);
+  height: 350px !important;
+  border: 1.5px solid rgb(235, 46, 46);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
 @media only screen and (max-Width:1200px) {
   .App {
       width: 60%;

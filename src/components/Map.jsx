@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import "./Map.css";
+import "../App.css";
 
 export const Map = () => {
   const { curr_location } = useSelector((store) => store.weather);
