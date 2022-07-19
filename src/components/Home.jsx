@@ -19,7 +19,7 @@ const getAllDays = () => {
 
   weakday.filter((ele, ind) => {
     if (day === ele) {
-      for (let i = 0; i < 8; i++) arr.push(weakday[(ind + i) % 7]);
+      for (let i = 0; i < 7; i++) arr.push(weakday[(ind + i) % 7]);
     }
 
     return 1;
